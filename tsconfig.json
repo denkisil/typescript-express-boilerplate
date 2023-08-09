@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src/",
+    "baseUrl": "./",
+    "outDir": "./build/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@apptypes*": ["src/types*"],
+      "@routers*": ["src/routers*"],
+      "@models*": ["src/models*"],
+      "@middlewares*": ["src/middlewares*"],
+      "@helpers*": ["src/helpers*"],
+      "@handlers*": ["src/handlers*"],
+      "@config": ["src/config/index"]
+    }
+  },
+  "include": ["src/**/*", ".eslintrc.js"],
+  "exclude": ["node_modules"]
+}
